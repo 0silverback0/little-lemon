@@ -29,11 +29,11 @@ def users(request):
 def current_user(request):
     """ Get current user """
     user = request.user
-    # You can customize the response data based on your requirements
+    
     data = {
         'username': user.username,
         'email': user.email,
-        # Add any other fields you want to include
+        
     }
     return Response(data)
 
